@@ -1645,22 +1645,6 @@ int bbcode_strip_escaping(bstring string){
 	}
 }
 
-/* void main() {
-	bbcode_parser_p parser = bbcode_parser_create();
-	bbcode_parser_set_flags(parser, BBCODE_AUTO_CORRECT|BBCODE_ARG_DOUBLE_QUOTE|BBCODE_ARG_SINGLE_QUOTE);
-	bbcode_parser_add_ruleset(parser, BBCODE_TYPE_NOARG, 0, "b", 1, "<b>", 3, "</b>", 4, "", 0, "all", 3, "all", 3, NULL, NULL, NULL, NULL);
-	bbcode_parser_add_ruleset(parser, BBCODE_TYPE_NOARG, 0, "i", 1, "<i>", 3, "</i>", 4, "", 0, "all", 3, "all", 3, NULL, NULL, NULL, NULL);
-	bbcode_parser_add_ruleset(parser, BBCODE_TYPE_ARG, 0, "url", 1, "<a href=\"{PARAM}\">", 18, "</a>", 4, "", 0, "all", 3, "all", 3, NULL, NULL, NULL, NULL);
-	char *ret;
-	long i;
-	char *string="[b], [i]Test, [/b] [url='http://www.bmco.be/']Coucou[/url][/i] Blug";
-	bbcode_parser_add_smiley(parser, ":D", 2, "replaced", 8);
-	ret = bbcode_parse(parser, string, strlen(string), &i);
-	bbcode_parser_free(parser);
-	printf(ret);
-	free(ret);
-	printf("\n");
-} */
 /*---------------------------
  Built-in callbacks
  ---------------------------*/
