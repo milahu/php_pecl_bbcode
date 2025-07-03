@@ -199,7 +199,7 @@ void main() {
 
 	char *ret;
 	int i;
-	char *string="[b], [i]Test, [/b] [url='http://www.bmco.be/']Coucou[/url][/i] Blug";
+	char *string="[b], [i]Test, [/b] [url='http://www.bmco.be/']Coucou[/url][/i] Blug [url=javascript:alert('fixme')]clickme[/url] <script>bad</script> <style>bad</style>";
 	bbcode_parser_add_smiley(parser, ":D", 2, "replaced", 8);
 	ret = bbcode_parse(parser, string, strlen(string), &i);
 	bbcode_parser_free(parser);

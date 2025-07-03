@@ -1,5 +1,10 @@
 TODO Version $Id$
 
+-- Bugs --
+* escape left angle brackets from "<" to "&lt;"
+* sanitize HTML code to prevent XSS attacks
+  [url=javascript:alert('fixme')]clickme[/url]
+
 -- Callback --
 * Prepare some built-in callbacks
   
